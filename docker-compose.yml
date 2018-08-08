@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  console02:
+    image: ${DOCKER_REGISTRY}console02
+    build:
+      context: .
+      dockerfile: Dockerfile

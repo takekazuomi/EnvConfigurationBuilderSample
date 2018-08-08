@@ -1,0 +1,7 @@
+{
+  "foo": "bar",
+  "nested": {
+    "boo1": "woo1",
+    "boo2": "woo2"
+  }
+}
