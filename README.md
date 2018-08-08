@@ -1,5 +1,7 @@
-# environment variable with name containing a colon
+# Override configration by Environment variables
 
+This is a sample code that overrides the setting with environment variable using Microsoft.Extensions.Configuration.
+For nested settings, environment variable names (Key) are joined by a colon. A colon can not be set as an environment variable name in bash, but it can be used with Dockerfile. In Microsoft.Extensions.Configuration.EnvironmentVariables, you can also use double underscore (__) instead of a colon (:).
 
 ## override configration by environment variable
 
@@ -41,6 +43,7 @@ console02_console02_1 exited with code 0
 
 ## MEMO Create Projects
 
+```
 dotnet new console -o console02
 cd console02
 dotnet add package Microsoft.Extensions.Configuration
@@ -50,3 +53,4 @@ dotnet new sln
 dotnet sln add ./console02.csproj
 git init .
 devenv ./console02.sln
+```
